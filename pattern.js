@@ -142,3 +142,107 @@ for(let i =0;i<=row; i++){
 }
 console.log(' array based pattern');
 console.log(pattern);
+
+// ------------------------------------------------------------------------------- 7th pattern -------------------------------
+/*
+    *
+   ***
+  *****
+ *******
+*********
+*/
+
+let row =5;
+let last_column = 1;
+let str_arr = [];
+for(let i=1; i<=row; i++){
+    let sub_str ='';
+    let sub_str_arr =[];
+    for(let k=0; k<row-i; k++){
+        sub_str = sub_str +' ';
+        sub_str_arr.push(' ');
+    }
+    for(let j=0; j< last_column; j++){
+        sub_str = sub_str +'*';
+         sub_str_arr.push('*');
+    }
+    last_column = last_column+2
+    str_arr.push(sub_str_arr);
+    console.log(sub_str)
+}
+console.log(str_arr);
+
+//------------------------------------------------------- 8th pattern --------------------------------------------
+/*
+*********
+ *******
+  *****
+   ***
+    *
+*/
+let row =5;
+let str_arr = [];
+for(let i=0; i<row; i++){
+    let sub_str ='';
+    let sub_str_arr =[];
+    for(let k=0; k<i; k++){
+        sub_str = sub_str +' ';
+        sub_str_arr.push(' ');
+    }
+    for(let j=0; j<(2*(row-i))-1; j++){
+        sub_str = sub_str +'*';
+         sub_str_arr.push('*');
+    }
+    str_arr.push(sub_str_arr);
+    console.log(sub_str)
+}
+console.log(str_arr);
+
+// ------------------------------------------------------- 9th pattern  ------------------------------------------------------
+
+/*
+    *
+   ***
+  *****
+ *******
+*********
+*********
+ *******
+  *****
+   ***
+    *
+*/
+let row =5;
+let str_arr = [];
+for(let i=0; i<row; i++){
+    let sub_str ='';
+    let sub_str_arr =[];
+    for(let k=0; k<row-i-1; k++){
+        sub_str = sub_str +' ';
+        sub_str_arr.push(' ');
+    }
+    for(let j=0; j<(2*i)+1; j++){
+        sub_str = sub_str +'*';
+         sub_str_arr.push('*');
+    }
+    str_arr.push(sub_str_arr);
+    console.log(sub_str)
+}
+
+for(let i=0; i<row; i++){
+   let sub_str ='';
+    let sub_str_arr =[];
+    for(let k=0; k<i; k++){
+        sub_str = sub_str +' ';
+        sub_str_arr.push(' ');
+    }
+    for(let j=0; j<(2*(row-i))-1; j++){
+        sub_str = sub_str +'*';
+         sub_str_arr.push('*');
+    }
+    str_arr.push(sub_str_arr);
+    console.log(sub_str)
+}
+console.log(str_arr);
+
+// -------------------------------------------------------------------------------- 10th pattern -----------------------
