@@ -246,3 +246,38 @@ for(let i=0; i<row; i++){
 console.log(str_arr);
 
 // -------------------------------------------------------------------------------- 10th pattern -----------------------
+/*
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+*/
+
+let row =5;
+let str_arr = [];
+for(let i=0; i<=row; i++){
+    let sub_str ='';
+    let sub_str_arr =[];
+    for(let j=0; j<i; j++){
+        sub_str = sub_str +'*';
+        sub_str_arr.push('*');
+    } 
+    str_arr.push(sub_str_arr);
+    console.log(sub_str)
+}
+for(let i=0; i<row-1; i++){
+    let sub_str ='';
+    let sub_str_arr =[];
+    for(let j=0; j<row-i-1; j++){
+        sub_str = sub_str +'*';
+        sub_str_arr.push('*');
+    } 
+    str_arr.push(sub_str_arr);
+    console.log(sub_str)
+}
+console.log(str_arr);
